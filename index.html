@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url(img/1.jpg);">
+                <div class="content">
+                    <div class="name">Croustille</div>
+                    <div class="des">Ce Gâteau est fait au chocolat et croustillant.</div>
+                    <div class="checkbox-group">
+                        <input class="des" type="checkbox" id="typeg" name="type_de_gateau[]" value="typeg">
+                        <label class="des"  for="typeg">Gâteau Croustillant</label><br><br>
+                        <label class="des" for="nbr">Nombre :</label>
+                        <input class="nbr"  type="number" id="nbr" name="nbr" required>
+                    </div><br>
+                    
+                    <button>Ajouter</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/2.jpg);">
+                <div class="content">
+                    <div class="name">Croustille</div>
+                    <div class="des">Ce Gâteau est fait au chocolat et croustillant.</div>
+                    <div class="checkbox-group">
+                        <input class="des" type="checkbox" id="typeg" name="type_de_gateau[]" value="typeg">
+                        <label class="des"  for="typeg">Gâteau Croustillant</label><br><br>
+                        <label class="des" for="nbr">Nombre :</label>
+                        <input class="nbr"  type="number" id="nbr" name="nbr" required>
+                    </div><br>
+                    
+                    <button>Ajouter</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/3.jpg);">
+                <div class="content">
+                    <div class="name">Croustille</div>
+                    <div class="des">Ce Gâteau est fait au chocolat et croustillant.</div>
+                    <div class="checkbox-group">
+                        <input class="des" type="checkbox" id="typeg" name="type_de_gateau[]" value="typeg">
+                        <label class="des"  for="typeg">Gâteau Croustillant</label><br><br>
+                        <label class="des" for="nbr">Nombre :</label>
+                        <input class="nbr"  type="number" id="nbr" name="nbr" required>
+                    </div><br>
+                    
+                    <button>Ajouter</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/4.jpg);">
+                <div class="content">
+                    <div class="name">Croustille</div>
+                    <div class="des">Ce Gâteau est fait au chocolat et croustillant.</div>
+                    <div class="checkbox-group">
+                        <input class="des" type="checkbox" id="typeg" name="type_de_gateau[]" value="typeg">
+                        <label class="des"  for="typeg">Gâteau Croustillant</label><br><br>
+                        <label class="des" for="nbr">Nombre :</label>
+                        <input class="nbr"  type="number" id="nbr" name="nbr" required>
+                    </div><br>
+                    
+                    <button>Ajouter</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/5.jpg);">
+                <div class="content">
+                    <div class="name">Croustille</div>
+                    <div class="des">Ce Gâteau est fait au chocolat et croustillant.</div>
+                    <div class="checkbox-group">
+                        <input class="des" type="checkbox" id="typeg" name="type_de_gateau[]" value="typeg">
+                        <label class="des"  for="typeg">Gâteau Croustillant</label><br><br>
+                        <label class="des" for="nbr">Nombre :</label>
+                        <input class="nbr"  type="number" id="nbr" name="nbr" required>
+                    </div><br>
+                    
+                    <button>Ajouter</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/6.jpg);">
+                <div class="content">
+                    <div class="name">Croustille</div>
+                    <div class="des">Ce Gâteau est fait au chocolat et croustillant.</div>
+                    <div class="checkbox-group">
+                        <input class="des" type="checkbox" id="typeg" name="type_de_gateau[]" value="typeg">
+                        <label class="des"  for="typeg">Gâteau Croustillant</label><br><br>
+                        <label class="des" for="nbr">Nombre :</label>
+                        <input class="nbr"  type="number" id="nbr" name="nbr" required>
+                    </div><br>
+                    
+                    <button>Ajouter</button>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="prev">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="next">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        const $next = document.querySelector('.next');
+
+        const $prev = document.querySelector('.prev');
+
+        $next.addEventListener(
+            'click',
+            () => {
+                const items = document.querySelectorAll('.item');
+                document.querySelector('.slide').appendChild(items[0]);
+            },
+        );
+
+        $prev.addEventListener(
+            'click',
+            () => {
+                const items = document.querySelectorAll('.item');
+                document.querySelector('.slide').prepend(items[items.length - 1]);
+            },
+        );
+
+    </script>
+</body>
+
+</html>
